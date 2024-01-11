@@ -1,0 +1,53 @@
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.placesetting {
+    height: 100%;
+    margin: 4 auto;
+}
+.plate {
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    background: lightgreen;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.daemous {
+  stroke: #00C300;
+  stroke-width: 0.5px;
+  stroke-dashoffset: -200;
+  stroke-dasharray: 200;
+  animation-name: daemous;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes daemous {
+  0% {
+    stroke-dashoffset: -200;
+    stroke: #00C300;
+  }
+  30% {
+    stroke: #00FF00;
+  }
+  50% {
+    stroke: #00C300;
+  }
+  70% {
+    stroke: #00FF00;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #00FF00;
+  }
+}
